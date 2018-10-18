@@ -9,9 +9,8 @@
     <meta http-equiv="x-ua-compatible" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-<!--Empieza el contenido-->
-<header>
 
+<form action="http://www.artencuentro@gmail.com" method="post">
     <nav>
         <ul>
             <li><a class="active" href="index.html">Inicio</a></li>
@@ -26,40 +25,26 @@
             </div>
         </ul>
     </nav>
-</header>
 
-<section >
-    <article id="ofertas">
-        <h2>Ofertas</h2>
-        <p>Aquí subiremos material nuevo</p>
-    </article>
-</section>
+    <fieldset id="contact">
+        <legend>Datos del correo</legend>
 
-<section>
-    <aside id="lateral">
+        <label for="direccion">Dirección de correo:</label>
+        <input type="text" name="direccion" id="direccion" size="40"><br>
 
-        <section class="catalogos">
-            <h3>Catálogos</h3>
-            <div>
-                <article class="articulo">
-                    <h5>Catálogo 2017</h5>
-                </article>
-            </div>
-            <div>
-                <article class="articulo">
-                    <h5>Catálogo 2016</h5>
-                </article>
-            </div>
-            <div>
-                <article class="articulo">
-                    <h5>Catálogo 2015</h5>
-                </article>
-            </div>
-        </section>
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="nombre" id="Nombre" size="40"><br>
 
-    </aside>
-</section>
+        <label for="Apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="Apellidos" size="40"><br>
 
+        <label for="Asunto">Asunto: </label>
+        <input type="text" name="asunto" id="Asunto" size="40"><br>
+
+        <textarea name="cuerpo" cols="60" rows="3"></textarea><br>
+        <input type="submit" value="enviar">
+    </fieldset>
+</form>
 
 
 <footer>
@@ -67,7 +52,13 @@
     <address>Telf: 123-95-72-22         Mail: ferreteria@ulpgc.es</address>
 </footer>
 
-<!--Termina el contenido-->
+
+
+
+
+
+
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
